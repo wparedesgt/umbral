@@ -110,3 +110,6 @@ ExitoEscolar <- ExitoEscolar %>% mutate(edad = interval(start = ExitoEscolar$Fec
 Datos <- ExitoEscolar %>% filter(!is.na(Especialidad_Pre_Inscrita))
 CantRegistros <- nrow(Datos)
 
+save(Datos, file = "rda/Datos.rda")
+save(ExitoEscolar, file = "rda/ExitoEscolar.rda")
+save(DatosMaestros, file = "rda/DatosMaestros.rda")
