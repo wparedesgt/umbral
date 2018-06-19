@@ -1,7 +1,6 @@
 library(tidyverse)
 library(readxl)
 library(tm)
-library(plotly)
 library(lubridate)
 
 url <- "data/exitoescolar.xlsx"
